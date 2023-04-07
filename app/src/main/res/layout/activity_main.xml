@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2E784"
+    >
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etGasolina"
+        android:inputType="numberDecimal"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="Valor da Gasolina"
+        android:maxLength="8"
+        android:textSize="40dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etEtanol"
+        android:inputType="numberDecimal"
+        android:text=""
+        android:textStyle="bold"
+        android:textColorHint="@color/black"
+        android:maxLength="7"
+        android:hint="Valor do Etanol"
+        android:textSize="40dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teResultado"
+        android:layout_gravity="center"
+        android:text="Resultado"
+        android:textSize="45dp"
+        android:textColor="#F10757"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#AAEE97"
+            android:onClick="btCalcularOnclick"
+            android:text="Calcular"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btLimpar"
+            android:text="LIMPAR"
+            android:textSize="20dp"
+            android:onClick="btLimparOnclick"
+            android:background="#EA7995"
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"/>
+    </LinearLayout>
+</LinearLayout>
